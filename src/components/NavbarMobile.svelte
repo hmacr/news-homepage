@@ -10,14 +10,15 @@
 
   function handleMenuOpen(e: Event) {
     tintDiv.classList.remove('hidden');
-    menu.classList.remove('hidden');
-    menu.classList.add('flex');
+    menu.classList.remove('translate-x-full');
+    menu.classList.add('translate-x-0');
     containerDiv.classList.add('overflow-y-hidden', 'h-screen');
   }
 
   function handleMenuClose(e: Event) {
     tintDiv.classList.add('hidden');
-    menu.classList.add('hidden');
+    menu.classList.remove('translate-x-0');
+    menu.classList.add('translate-x-full');
     containerDiv.classList.remove('overflow-y-hidden', 'h-screen');
   }
 </script>
@@ -40,13 +41,13 @@
 
 <!-- Tint -->
 <div
-  class="w-screen h-screen absolute top-0 left-0 z-10 bg-black/95 hidden"
+  class="w-screen h-screen fixed top-0 left-0 z-10 bg-black/50 hidden"
   bind:this={tintDiv}
 />
 
 <!-- Menu -->
 <div
-  class="flex-col gap-12 absolute top-0 right-0 w-[300px] h-screen p-8 bg-off-white z-10 hidden"
+  class="flex flex-col gap-12 fixed top-0 right-0 w-[300px] h-screen p-8 bg-off-white z-10 translate-x-full transition-all"
   bind:this={menu}
 >
   <!-- Close Icon -->
