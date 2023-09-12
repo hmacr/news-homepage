@@ -1,0 +1,20 @@
+[
+  {
+    "serial_no": "01",
+    "heading": "Reviving Retro PCs",
+    "sub_text": "What happens when old PCs are given modern upgrades?",
+    "img_src": "/images/image-retro-pcs.jpg"
+  },
+  {
+    "serial_no": "02",
+    "heading": "Top 10 Laptops of 2022",
+    "sub_text": "Our best picks for various needs and budgets.",
+    "img_src": "/images/image-top-laptops.jpg"
+  },
+  {
+    "serial_no": "03",
+    "heading": "The Growth of Gaming",
+    "sub_text": "How the pandemic has sparked fresh opportunities.",
+    "img_src": "/images/image-gaming-growth.jpg"
+  }
+]
